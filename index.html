@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konversi & Aritmatika Bilangan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Konversi dan Aritmatika Bilangan</h1>
+
+  <div class="section">
+    <h2>Konversi Bilangan</h2>
+    <label for="convertFrom">Dari:</label>
+    <select id="convertFrom">
+      <option value="decimal">Desimal</option>
+      <option value="binary">Biner</option>
+      <option value="octal">Oktal</option>
+      <option value="hex">Heksadesimal</option>
+    </select>
+    <label for="convertTo">Ke:</label>
+    <select id="convertTo">
+      <option value="binary">Biner</option>
+      <option value="octal">Oktal</option>
+      <option value="hex">Heksadesimal</option>
+      <option value="decimal">Desimal</option>
+    </select>
+    <input type="text" id="convertInput" placeholder="Masukkan nilai" />
+    <button onclick="convert()">Konversi</button>
+    <p>Hasil: <span id="convertResult"></span></p>
+  </div>
+
+  <div class="section">
+    <h2>Aritmatika Biner</h2>
+    <input type="text" id="bin1" placeholder="Biner 1 (contoh: 1010)" />
+    <select id="binOperator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="text" id="bin2" placeholder="Biner 2 (contoh: 0011)" />
+    <button onclick="binaryArithmetic()">Hitung</button>
+    <p>Hasil: <span id="binaryResult"></span></p>
+  </div>
+
+  <div class="section">
+    <h2>Aritmatika Oktal</h2>
+    <input type="text" id="oct1" placeholder="Oktal 1 (contoh: 17)" />
+    <select id="octOperator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="text" id="oct2" placeholder="Oktal 2 (contoh: 5)" />
+    <button onclick="octalArithmetic()">Hitung</button>
+    <p>Hasil: <span id="octalResult"></span></p>
+  </div>
+
+  <div class="section">
+    <h2>Aritmatika Heksadesimal</h2>
+    <input type="text" id="hex1" placeholder="Hex 1 (contoh: A)" />
+    <select id="hexOperator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="text" id="hex2" placeholder="Hex 2 (contoh: 5)" />
+    <button onclick="hexArithmetic()">Hitung</button>
+    <p>Hasil: <span id="hexResult"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
